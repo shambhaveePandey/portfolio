@@ -72,38 +72,130 @@ header {
   gap: 1rem;
 }
 
+#projects-grid {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 .project-card {
-  border: 1px solid #ddd;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
   background: #fff;
   padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  margin: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 1000px;
 }
 
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.project-card a {
-  color: #2563eb;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.project-tags {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.tag {
-  font-size: 0.75rem;
+.project-thumb {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex: 0 0 280px;
   background: #eee;
-  padding: 0.2rem 0.4rem;
-  margin-right: 0.3rem;
-  border-radius: 3px;
+}
+
+.project-meta {
+  flex: 1;
+}
+
+.project-meta h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.125rem;
+}
+
+.project-meta p {
+  margin: 0 0 0.5rem 0;
+  color: #444;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  background: #0078d4;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  padding: 0 0.5rem;
+}
+
+.carousel-controls button {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.55);
+  border: none;
+  color: #fff;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.carousel-dot {
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  margin: 0 5px;
+  background: #d0d0d0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+}
+
+.carousel-dot.active {
+  background: #333;
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-thumb {
+    width: 100%;
+    height: 160px;
+    flex: 0 0 auto;
+  }
 }
 
 form {
