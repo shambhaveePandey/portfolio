@@ -3,12 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio</title>
+  <title>Shambhavee's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <section id="about-container"></section>
-  <section id="projects-grid"></section>
+  <section id="projects-grid">
+    <nav aria-label="Project carousel controls">
+      <button id="prev-btn" aria-label="Previous slide">&#10094;</button>
+      <button id="next-btn" aria-label="Next slide">&#10095;</button>
+    </nav>
+
+    <ul id="projects-list" class="projects-list" role="list" aria-roledescription="carousel" aria-live="polite" aria-atomic="true">
+      <!-- items injected from template -->
+    </ul>
+
+    <ol id="carousel-dots" class="carousel-dots" role="tablist" aria-label="Slide navigation"></ol>
+
+    <template id="project-template">
+      <li class="project-item" role="listitem">
+        <article class="project-card">
+          <a class="project-link" href="" target="_blank" rel="noopener">
+            <figure>
+              <img class="project-thumb" src="" alt="">
+              <figcaption class="project-meta">
+                <h3 class="project-title"></h3>
+                <p class="project-desc"></p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+      </li>
+    </template>
+  </section>
 
   <form id="contact-form">
     <input name="name" placeholder="Name" required />
