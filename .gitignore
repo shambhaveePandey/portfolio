@@ -1,8 +1,53 @@
+# Build outputs
 bin/
 obj/
+publish/
+artifacts/
+
+# VS/IDE
 .vs/
+.vscode/
+.idea/
+
+# User files
 *.user
 *.suo
+*.tmp
+
+# Dotnet/publish
+*.nupkg
+*.snupkg
+*.msi
+
+# Logs, DBs, caches
+*.log
+*.sqlite
 *.db
+*.db-shm
+*.db-wal
+coverage/
+*.coverage
+
+# Certificates/keys
+*.pfx
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & env
+.env
+.env.*
+secrets.json
+appsettings.*.json
+
+# Node / frontend
 node_modules/
 dist/
+frontend/dist/
+frontend/node_modules/
+
+# NuGet
+.nuget/
+packages/
