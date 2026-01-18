@@ -1,0 +1,102 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and advanced product filtering. Built with modern web technologies and optimized for performance.",
+      "image": "https://via.placeholder.com/400x200?text=E-Commerce+Platform",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "link": "https://example-ecommerce.com",
+      "github": "https://github.com/yourusername/ecommerce-platform",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, team workspaces, and integrated notifications. Features drag-and-drop boards and advanced filtering capabilities.",
+      "image": "https://via.placeholder.com/400x200?text=Task+Management",
+      "technologies": ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+      "link": "https://example-tasks.com",
+      "github": "https://github.com/yourusername/task-manager",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "A responsive weather application providing real-time forecasts, historical data analysis, and location-based recommendations. Integrates with multiple weather APIs for accurate predictions.",
+      "image": "https://via.placeholder.com/400x200?text=Weather+Dashboard",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "OpenWeather API"],
+      "link": "https://example-weather.com",
+      "github": "https://github.com/yourusername/weather-dashboard",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Social Media Analytics",
+      "description": "An analytics dashboard for tracking social media performance across multiple platforms. Provides detailed metrics, engagement analysis, and automated reporting with data visualization.",
+      "image": "https://via.placeholder.com/400x200?text=Analytics+Dashboard",
+      "technologies": ["React", "D3.js", "Python", "Django"],
+      "link": "https://example-analytics.com",
+      "github": "https://github.com/yourusername/social-analytics",
+      "featured": false
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 1,
+      "title": "Scaling E-Commerce to 100K Users",
+      "subtitle": "Performance Optimization & Infrastructure",
+      "challenge": "The e-commerce platform was experiencing severe performance issues with database queries taking 5+ seconds. User abandonment rate increased by 35% during peak traffic periods.",
+      "solution": "Implemented database indexing, Redis caching layer, and CDN optimization. Refactored the product listing API with pagination and lazy loading. Deployed load balancing across multiple instances.",
+      "results": [
+        "Reduced page load time from 5s to 800ms (84% improvement)",
+        "Increased conversion rate by 28%",
+        "Handled 10x more concurrent users",
+        "Reduced infrastructure costs by 22%"
+      ],
+      "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
+      "image": "https://via.placeholder.com/600x400?text=E-Commerce+Scale"
+    },
+    {
+      "id": 2,
+      "title": "Real-Time Collaboration Platform",
+      "subtitle": "WebSocket Architecture & Data Synchronization",
+      "challenge": "Building a real-time document collaboration tool that could handle 500+ concurrent editors while maintaining data consistency and preventing conflicts.",
+      "solution": "Implemented WebSocket-based architecture with operational transformation for conflict resolution. Built custom synchronization protocol with delta compression. Used event sourcing for audit trail.",
+      "results": [
+        "Supported 1000+ concurrent users per instance",
+        "99.95% data consistency across editors",
+        "Network bandwidth reduced by 65% using delta compression",
+        "Full audit history for compliance"
+      ],
+      "technologies": ["Vue.js", "Node.js", "Socket.io", "MongoDB", "Docker"],
+      "image": "https://via.placeholder.com/600x400?text=Real-Time+Collaboration"
+    },
+    {
+      "id": 3,
+      "title": "Analytics Dashboard Redesign",
+      "subtitle": "Data Visualization & Performance",
+      "challenge": "Legacy dashboard took 45 seconds to load with 2MB+ of data transferred. Stakeholders needed real-time insights across 20+ metrics.",
+      "solution": "Rebuilt with React and D3.js for better performance. Implemented server-side aggregation and caching. Added real-time updates via WebSocket. Created custom visualizations for business metrics.",
+      "results": [
+        "Load time reduced from 45s to 2.5s",
+        "Data transfer decreased by 78%",
+        "Real-time metrics updated every 5 seconds",
+        "User engagement increased by 156%"
+      ],
+      "technologies": ["React", "D3.js", "TypeScript", "Express", "PostgreSQL"],
+      "image": "https://via.placeholder.com/600x400?text=Analytics+Dashboard"
+    }
+  ],
+  "about": {
+    "name": "Shambhavee",
+    "title": "Full Stack Developer",
+    "summary": "I'm a passionate full-stack developer with expertise in modern web technologies. I love building scalable applications and solving complex problems through creative solutions."
+  },
+  "social": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "email": "hello@example.com"
+  }
+}
