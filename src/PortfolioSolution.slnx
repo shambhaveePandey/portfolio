@@ -1,2 +1,3 @@
 <Solution>
+  <Project Path="Portfolio.Api\Portfolio.Api.csproj" />
 </Solution>

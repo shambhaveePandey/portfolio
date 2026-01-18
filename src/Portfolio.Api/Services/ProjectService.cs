@@ -10,22 +10,25 @@ public class ProjectService : IProjectService
         new Project
         {
             Id = 1,
-            Title = "Portfolio Website",
-            Description = "Personal portfolio built with HTML, CSS, JS and .NET API.",
-            Link = "https://your-portfolio-link",
-            Tags = new List<string>{ "Web", "C#", ".NET" }
+            Title = "E-Commerce Platform",
+            Description = "A full-stack e-commerce solution with real-time inventory management, secure payment processing, and advanced product filtering.",
+            Image = "https://via.placeholder.com/400x200?text=E-Commerce+Platform",
+            Technologies = new List<string> { "React", "Node.js", "MongoDB", "Stripe" },
+            Link = "https://example-ecommerce.com",
+            GitHub = "https://github.com/yourusername/ecommerce-platform"
         },
         new Project
         {
             Id = 2,
-            Title = "API Demo",
-            Description = "Sample REST API with ASP.NET Core.",
-            Link = "https://github.com/yourname/api-demo",
-            Tags = new List<string>{ "API", "REST" }
+            Title = "Task Management App",
+            Description = "A collaborative task management application with real-time updates, team workspaces, and integrated notifications.",
+            Image = "https://via.placeholder.com/400x200?text=Task+Management",
+            Technologies = new List<string> { "Vue.js", "Express", "PostgreSQL", "Socket.io" },
+            Link = "https://example-tasks.com",
+            GitHub = "https://github.com/yourusername/task-manager"
         }
     };
 
     public IEnumerable<Project> GetAll() => _projects;
-
     public Project? GetById(int id) => _projects.FirstOrDefault(p => p.Id == id);
 }

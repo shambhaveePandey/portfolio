@@ -1,6 +1,29 @@
-@Portfolio.Api_HostAddress = http://localhost:5261
+@base = http://localhost:5261/api
 
-GET {{Portfolio.Api_HostAddress}}/weatherforecast/
+### Get About
+GET {{base}}/about
 Accept: application/json
 
 ###
+
+### Get All Projects
+GET {{base}}/projects
+Accept: application/json
+
+###
+
+### Get Project by ID
+GET {{base}}/projects/1
+Accept: application/json
+
+###
+
+### Post Contact
+POST {{base}}/contact
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "message": "Hello, this is a test message."
+}
