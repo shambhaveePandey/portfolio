@@ -39,8 +39,7 @@ Thumbs.db
 # Secrets & env
 .env
 .env.*
-secrets.json
-appsettings.*.json
+
 
 # Node / frontend
 node_modules/
