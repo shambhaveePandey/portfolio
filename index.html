@@ -3,30 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shambhavee's Portfolio</title>
+  <meta name="description" content="Shambhavee's Portfolio - BIM & Solution Specialist" />
+  <title>Shambhavee - BIM & Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- SVG Gradients -->
+  <svg style="display:none;">
+    <defs>
+      <linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#c19a6b;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg>
 </head>
 <body>
   <header>
     <nav class="nav">
-      <div class="logo"></div>
+      <div class="logo"><a href="#home">About Me</a></div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#case-studies">Case Studies</a></li>
         <li><a href="#design">Design</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+
   <section id="home" class="section">
-    <h2>Home</h2>
-    <div id="about-container" class="scroll-reveal"></div>
+    <div class="home-content">
+      <div id="about-container" class="scroll-reveal"></div>
+      <div class="profile-section scroll-reveal">
+        <img src="https://via.placeholder.com/280x280?text=Shambhavee" alt="Shambhavee Pandey" class="profile-image" />
+        <a href="#" class="resume-btn" download>
+          <span>📄</span> Download Resume
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
     <div id="projects-grid"></div>
   </section>
 
@@ -40,27 +63,37 @@
     <div id="design-container"></div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <form id="contact-form" class="scroll-reveal">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" name="name" placeholder="Your name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Your email" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-      <div id="contact-status"></div>
-    </form>
-  </section>
+  <div class="skills-contact-wrapper">
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div id="skills-container"></div>
+    </section>
 
-  <footer>&copy; <span id="year"></span> All rights reserved.</footer>
+    <section id="contact" class="section">
+      <h2>Get In Touch</h2>
+      <form id="contact-form" class="scroll-reveal">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+        <div id="contact-status"></div>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Shambhavee Pandey. All rights reserved.</p>
+    <p><a href="#home">Back to top</a></p>
+  </footer>
 
   <script src="main.js"></script>
 </body>

@@ -1,4 +1,9 @@
 {
+  "about": {
+    "name": "Shambhavee Pandey",
+    "title": "BIM & Solution Specialist",
+    "summary": "I'm a passionate full-stack developer with expertise in modern web technologies. I love building scalable applications and solving complex problems through creative solutions."
+  },
   "projects": [
     {
       "id": 1,
@@ -88,10 +93,83 @@
       "image": "https://via.placeholder.com/600x400?text=Analytics+Dashboard"
     }
   ],
-  "about": {
-    "name": "Shambhavee",
-    "title": "Full Stack Developer",
-    "summary": "I'm a passionate full-stack developer with expertise in modern web technologies. I love building scalable applications and solving complex problems through creative solutions."
+  "architecturalDesign": [
+    {
+      "title": "Skyline Towers",
+      "subtitle": "Mixed-Use High Rise Housing",
+      "image": "https://via.placeholder.com/400x250?text=Skyline+Towers",
+      "concept": "A contemporary mixed-use development featuring 45-story residential towers integrated with retail and cultural spaces. Designed with sustainable building practices and modern architectural aesthetics.",
+      "highlights": ["1,200 residential units", "50,000 sq ft retail space", "Award-winning sustainable design", "15 architect team led"],
+      "technologies": ["Revit", "Rhino", "AutoCAD", "Lumion"]
+    },
+    {
+      "title": "Central Park Development",
+      "subtitle": "Urban Mixed-Use Redevelopment",
+      "image": "https://via.placeholder.com/400x250?text=Central+Park+Dev",
+      "concept": "Comprehensive urban redevelopment project transforming 15 acres into a vibrant mixed-use district with residential, commercial, and public spaces. Focus on pedestrian-friendly design and community integration.",
+      "highlights": ["3,500 housing units", "200,000 sq ft commercial", "8-acre public park", "Master plan approved 2023"],
+      "technologies": ["BIM Coordination", "Urban Design", "GIS Mapping", "Revit"]
+    },
+    {
+      "title": "Vertical Garden Complex",
+      "subtitle": "Sustainable Residential Tower",
+      "image": "https://via.placeholder.com/400x250?text=Vertical+Garden",
+      "concept": "Eco-friendly 35-story residential tower featuring integrated vertical gardens, green roofs, and sustainable energy systems. Design emphasizes biophilic architecture and environmental responsibility.",
+      "highlights": ["LEED Platinum certified", "800 apartments", "40% green space integration", "50% energy reduction"],
+      "technologies": ["Revit", "Energy Simulation", "Landscape Design", "BIM"]
+    },
+    {
+      "title": "Tech Innovation Hub",
+      "subtitle": "Corporate Campus Master Plan",
+      "image": "https://via.placeholder.com/400x250?text=Tech+Innovation",
+      "concept": "State-of-the-art corporate campus featuring flexible office spaces, innovation labs, and employee wellness facilities. Design promotes collaboration and creativity through open-plan architecture.",
+      "highlights": ["500,000 sq ft facility", "3,000 employee capacity", "Architecture Excellence Award 2024", "4 building complex"],
+      "technologies": ["Revit", "3D Visualization", "AutoCAD", "Interior Design"]
+    },
+    {
+      "title": "Waterfront Promenade",
+      "subtitle": "Mixed-Use Waterfront Development",
+      "image": "https://via.placeholder.com/400x250?text=Waterfront+Dev",
+      "concept": "2-mile waterfront development featuring residential towers, cultural venues, restaurants, and public gathering spaces. Design emphasizes water access and scenic views with sustainable waterfront management.",
+      "highlights": ["2,000 residential units", "15 restaurants", "Cultural center", "Phase 1 completed 2024"],
+      "technologies": ["Master Planning", "Revit", "Landscape Design", "3D Rendering"]
+    },
+    {
+      "title": "Thesis Project: Adaptive Reuse",
+      "subtitle": "Historic Building Transformation",
+      "image": "https://via.placeholder.com/400x250?text=Adaptive+Reuse",
+      "concept": "Master's thesis exploring adaptive reuse of historic industrial buildings into modern mixed-use spaces. Project combines heritage preservation with contemporary design principles and sustainable retrofitting.",
+      "highlights": ["Published thesis", "International conference presentation", "Best Design Thesis Award", "Successful retrofit case study"],
+      "technologies": ["Heritage Conservation", "Revit", "Structural Analysis", "Historical Research"]
+    }
+  ],
+  "skills": {
+    "BIM & AEC": [
+      { "name": "Revit", "proficiency": 95 },
+      { "name": "AutoCAD", "proficiency": 90 },
+      { "name": "BIM Coordination", "proficiency": 90 },
+      { "name": "Navisworks", "proficiency": 85 },
+      { "name": "IFC Standards", "proficiency": 80 }
+    ],
+    "Software & Development": [
+      { "name": "C#/.NET", "proficiency": 85 },
+      { "name": "Python", "proficiency": 80 },
+      { "name": "JavaScript", "proficiency": 85 },
+      { "name": "SQL", "proficiency": 80 },
+      { "name": "API Development", "proficiency": 85 }
+    ],
+    "Cloud & Infrastructure": [
+      { "name": "Azure", "proficiency": 80 },
+      { "name": "AWS", "proficiency": 75 },
+      { "name": "Docker", "proficiency": 75 },
+      { "name": "Git/DevOps", "proficiency": 85 }
+    ],
+    "Project Management": [
+      { "name": "Agile/Scrum", "proficiency": 85 },
+      { "name": "BIM Project Management", "proficiency": 90 },
+      { "name": "Requirements Analysis", "proficiency": 85 },
+      { "name": "Stakeholder Management", "proficiency": 80 }
+    ]
   },
   "social": {
     "github": "https://github.com/yourusername",
